@@ -1,0 +1,59 @@
+/* ! >=========> Gerenal Style <=========< */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    cursor: pointer;
+}
+body{
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3;
+    -webkit-box-orient: vertical;
+ }
+/* & >=========> Variables <=========<*/
+:root{
+    --main-color : #0D0D0D
+}
+/* ^ >=========> Loading Screen <=========< */
+#loadingScreen{
+    background-color: var(--main-color);
+}
+/* ^ >=========> SideBar <=========< */
+.logo{
+    max-width: 50px;
+}
+#sideBar-inner{
+    background-color: var(--main-color);
+}
+/* ^ >=========> Meals-Cards <=========< */
+.card, .search-card{
+    cursor: pointer;
+}
+#overlayLayer{
+    top: 100%;
+    transition: all 500ms;
+    opacity: 0.9;
+    background-color: #f9f6f6ca;
+}
+.card:hover #overlayLayer{
+    top: 0;
+}
+.searchcard:hover #overlayLayer{
+    top: 0;
+}
+.catcard:hover #overlayLayer{
+    top: 0;
+}
+/* ^ >=========> Search-Inputs <=========< */
+input::placeholder { 
+    color: whitesmoke;
+}

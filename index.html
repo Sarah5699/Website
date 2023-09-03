@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <section id="loadingScreen" class="position-fixed top-0 start-0 w-100 h-100 z-3">
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <i class="fas fa-spinner fa-spin fa-4x text-white"></i>
+        </div>
+    </section>
+    <section id="sideBar" class="position-fixed top-0 bottom-0 d-flex z-2"> 
+        <div id="sideBar-inner" class="d-flex flex-column justify-content-between text-white p-4">
+            <ul class="list-unstyled">
+                <li id="search">Search</li>
+                <li id="categories" class="py-3">Categories</li>
+                <li id="area">Area</li>
+                <li id="ingrediants" class="py-3">Ingrediants</li>
+                <li id="contact">Contact Us</li>
+            </ul>
+            <div class="icons">
+                <a class="text-decoration-none text-white" href="">
+                    <i class="fa fa-brands fa-facebook"></i>
+                </a>
+                <a class="text-decoration-none text-white" href="">
+                    <i class="fa fa-brands fa-twitter"></i>
+                </a>
+                <a class="text-decoration-none text-white" href="">
+                    <i class="fa fa-solid fa-globe"></i>
+                </a>
+                <p>Copyright Â© 2019 All Rights 
+                    <br>
+                    Reserved.
+                </p>
+            </div>
+        </div>
+        <div id="sideBar-outer" class="d-flex flex-column justify-content-between bg-white p-2 text-center">
+            <img class="logo" src="Images/logo.png" alt="">
+            <div id="toggledIcons">
+                <i id="open" class="fa-solid fa-bars fa-2x d-inline"></i> <!-- open-close-icon fa-2x fa-align-justify-->
+                <i id="close" class="fa-solid fa-x fa-2x d-none"></i> <!-- open-close-icon fa-2x fa-align-justify-->
+            </div>
+            <div>
+                <i class="fa fa-solid fa-globe d-block"></i>
+                <i class="fa fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
+
